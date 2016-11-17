@@ -1,7 +1,7 @@
 
 # Abby
 
-Abby is a prototype for a console-based database, and includes several parts:
+Abby is a prototype for a console-based database from 2004, and includes several parts:
 
 
 **Abby** is the database backend, using [Zodb](http://www.zodb.org/) to persist

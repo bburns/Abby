@@ -1,7 +1,8 @@
 
 # Abby
 
-A prototype for a console-based database.
+Abby is a prototype for a console-based database, and includes several parts:
+
 
 **Abby** is the database backend, using [Zodb](http://www.zodb.org/) to persist
 objects to a file. It is a Python module, and can be accessed by importing it
@@ -17,23 +18,6 @@ handling formatted output and images, etc.
 Brooklyn, if there is any interest in maintaining such a user-interface.
 
 
-## Goals
-
-Goals for Abby:
-
-- Keep it simple, like Python itself. ie don't proliferate a huge set of api methods
-- Try to follow the way the brain organizes information where possible, i.e. fuzzily (a fuzzy database)
-
-Goals for Villa:
-
-- Acts as an external memory, simple to use
-- Semi-natural language interface / fuzzy parser (like an old Infocom game)
-- Publish objects to a website
-- Task manager
-- Help with learning and memorization
-- Port to phone eventually
-
-
 ## The problem
 
 It's hard to enter lots of information in NeoMem.
@@ -43,7 +27,7 @@ school, and then when I get a chance, put them into NeoMem. It's hard to enter
 stuff quickly though - it takes a long time to add new classes, navigate around,
 create folders, etc.
 
-So I have this huge backlog of information sitting on 3x5 cards.
+So I have this backlog of information sitting on 3x5 cards.
 
 
 ## Transcript
@@ -51,8 +35,8 @@ So I have this huge backlog of information sitting on 3x5 cards.
 It's always simpler to just look at an example rather than read a formal description, so here's
 a sample session with Villa:
 
-```
 
+```
 Welcome to Villa
 Using Abby (version 0.1)
 Abby database file 'stuff.abby', 226 objects.
@@ -212,19 +196,46 @@ Right!
 
 ## Install
 
-You'll need Python 2.7, [Zodb](http://www.zodb.org/), [ply (Python Lex Yacc)](https://github.com/dabeaz/ply):
+Install Python 2.7, [Zodb](http://www.zodb.org/), and [ply (Python Lex Yacc)](https://github.com/dabeaz/ply):
 
     > pip install zodb
     > pip install ply
 
 
+## Run
+
+    > abby
 
 
+## Exit
 
+    > quit
+
+
+## Goals
+
+Goals for Abby:
+
+- Keep it simple, like Python itself. ie don't proliferate a huge set of api methods
+- Try to follow the way the brain organizes information if possible, i.e. fuzzily (a fuzzy database)
+
+Goals for Villa:
+
+- Acts as an external memory, simple to use
+- Semi-natural language interface (like an old Infocom game)
+- Able to publish objects to a website
+- Task manager
+- Help with learning and memorization
+- Port to phone eventually
+
+
+## Todo
+
+- Add `help` command
+- Merge with NeoMemRuby
 
 
 ## License
 
 GPL
-
 
